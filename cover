@@ -1,0 +1,35 @@
+#!/usr/bin/env sh
+
+prev_title=""
+
+while true; do
+
+  current_title=$(playerctl metadata xesam:title 2>/dev/null)
+
+  if [[ -z "$current_title" ]]; then
+    sleep 1
+    continue
+  fi
+
+  if [[ "$current_title" != "$prev_title" ]]; then
+
+    prev_title="$current_title"
+
+    art_url=$(playerctl metadata mpris:artUrl 2>/dev/null)
+
+    file_path="${art_url#file://}"
+
+    terminal_width=$(tput cols)
+    terminal_height=$(tput lines)
+
+    if [[ -f "$file_path" ]]; then
+      clear
+      kitty +kitten icat --place "${terminal_width}x${terminal_height}@0x0" "$file_path"
+    else
+      clear
+      echo "No album art available or file not found."
+    fi
+  fi
+
+  sleep 1
+done
