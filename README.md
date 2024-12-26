@@ -1,5 +1,5 @@
 # Cover
-This script is a simple script that will show you the current album art of the song that is currently playing using playerctl. 
+This script is a simple script that will show you the current album art of the song that is currently playing using playerctl in kitty terminal. 
 
 # Instalation
 1. Clone the repository
