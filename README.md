@@ -20,5 +20,8 @@ sudo rm /usr/bin/cover
 - kitty
 
 # Images
-![image](https://github.com/user-attachments/assets/91495d90-535b-4e4c-8e14-3ada2be3e6d2)
-![image](https://github.com/user-attachments/assets/85060df1-99ed-49a1-9094-aa067238ca8b)
+## Hyprland
+![image](https://github.com/user-attachments/assets/52595fba-b0de-4cb5-aaaa-3836ddb6f595)
+## tmux
+![image](https://github.com/user-attachments/assets/2bffa027-4753-4d19-8c02-6455cf0000da)
+
